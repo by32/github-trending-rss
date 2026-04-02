@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GitHub Trending Digest</title>
+    <link>https://github.com/trending</link>
+    <description>Monthly digest of the top 50 trending GitHub repositories, with a focus on AI/ML. Auto-generated.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Apr 2026 12:00:00 +0000</lastBuildDate>
+    <atom:link href="https://byoungs.github.io/github-trending-rss/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>GitHub Trending Digest — March 2026</title>
+      <link>https://github.com/trending</link>
+      <guid isPermaLink="false">github-trending-2026-03</guid>
+      <pubDate>Wed, 01 Apr 2026 12:00:00 +0000</pubDate>
+      <description>Top 50 trending GitHub repos from March 2026. Dominated by the agent harness war, skills ecosystem explosion, swarm intelligence, and voice AI breakthroughs.</description>
+      <content:encoded><![CDATA[
+<p>The top 50 trending repositories from March 2026. This month was defined by the <strong>agent harness war</strong> — competing frameworks for orchestrating AI coding agents — alongside an explosion in skills/plugins, swarm intelligence, and voice AI.</p>
+
+<h2>AI / Machine Learning</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 302k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Personal AI assistant running on your devices. Local gateway to 50+ integrations (WhatsApp, Telegram, Slack, Discord, iMessage). 9K to 302K stars in ~60 days — fastest-growing OSS project in GitHub history.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/obra/superpowers">obra/superpowers</a></strong></td><td style="text-align:right; color:#888;">Shell · MIT · 129k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">The leading agentic skills framework and dev methodology. +37,800 stars in March. Sustained multi-week trending streak.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/affaan-m/everything-claude-code">affaan-m/everything-claude-code</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 118k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Performance optimization system for Claude Code and related coding agents. Briefly overtook superpowers at +21,490 stars/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/anthropics/claude-code">anthropics/claude-code</a></strong></td><td style="text-align:right; color:#888;">Shell · Proprietary · 97k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Anthropic's official agentic coding tool for the terminal. +3,900 stars/day.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/openai/codex">openai/codex</a></strong></td><td style="text-align:right; color:#888;">Rust · Apache-2.0 · 71k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">OpenAI's lightweight terminal coding agent. +2,345 stars/day.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/msitarzewski/agency-agents">msitarzewski/agency-agents</a></strong></td><td style="text-align:right; color:#888;">Shell · MIT · 66k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Complete AI agency with specialized agent personalities for engineering, design, sales, marketing, QA. +29,160/week peak.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/unslothai/unsloth">unslothai/unsloth</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 58k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Web UI for training and running open LLMs locally with dramatically reduced memory.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/harry0703/MoneyPrinterTurbo">harry0703/MoneyPrinterTurbo</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 53k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">AI-powered one-click HD short video generation.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/bytedance/deer-flow">bytedance/deer-flow</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 43k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">ByteDance's SuperAgent harness for research, code, and creative tasks with sandbox execution and persistent memory.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/666ghj/MiroFish">666ghj/MiroFish</a></strong></td><td style="text-align:right; color:#888;">Python · AGPL-3.0 · 42k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Swarm intelligence engine for prediction — financial forecasting, sentiment analysis, scenario modeling. +18,700/week peak.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/TauricResearch/TradingAgents">TauricResearch/TradingAgents</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 41k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Multi-agent LLM trading framework simulating a real trading firm with specialized analyst agents. Built on LangGraph.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/microsoft/BitNet">microsoft/BitNet</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 36k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Microsoft's 1-bit LLM inference framework. Dramatically reduced memory and compute. 370 points on HN.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/ruvnet/RuView">ruvnet/RuView</a></strong></td><td style="text-align:right; color:#888;">Rust · MIT · 34k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">WiFi-based human pose estimation and vital sign monitoring — no cameras. +9,800/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/microsoft/VibeVoice">microsoft/VibeVoice</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 34k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Microsoft's frontier voice AI — ASR (60 min), TTS (90 min), and streaming. Diffusion-based at 7.5 Hz.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/moeru-ai/airi">moeru-ai/airi</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 32k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Self-hosted AI VTuber companion that plays Minecraft and Factorio. +10,200/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/fishaudio/fish-speech">fishaudio/fish-speech</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 28k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open-source multilingual text-to-speech with voice cloning.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/FujiwaraChoki/MoneyPrinterV2">FujiwaraChoki/MoneyPrinterV2</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 25k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Automates YouTube/TikTok content generation end-to-end.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/karpathy/autoresearch">karpathy/autoresearch</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 23k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Karpathy's framework for autonomous AI agents that run ML research overnight. New in March.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/garrytan/gstack">garrytan/gstack</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 23k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">YC president Garry Tan's AI software factory — 23 specialized tools, 10K-20K lines/day. 23K stars in first week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 19k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Personal AI agent with accumulated memory and long-term companionship. +5,000/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/volcengine/OpenViking">volcengine/OpenViking</a></strong></td><td style="text-align:right; color:#888;">Python/Rust · AGPL-3.0 · 16k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">ByteDance's context database for AI agents — unifies memories, resources, skills via filesystem paradigm. +9,300/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/QwenLM/Qwen-Agent">QwenLM/Qwen-Agent</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 15k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Alibaba's Qwen 3.0 agent framework with MCP, code interpreter, multi-tool orchestration.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/langchain-ai/deepagents">langchain-ai/deepagents</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 15k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">LangChain's deep agent research — advanced multi-agent architectures and autonomous reasoning. +3,520/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/google-research/timesfm">google-research/timesfm</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 12k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Google's pretrained time-series foundation model for general-purpose forecasting.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/alibaba/page-agent">alibaba/page-agent</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Apache-2.0 · 11k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Alibaba's AI-driven browser automation and web page agent. +7,000/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/inclusionAI/AReaL">inclusionAI/AReaL</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 4.6k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">RL framework for LLM reasoning and agent training.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/HKUDS/ClawTeam">HKUDS/ClawTeam</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 3.4k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Agent swarm intelligence orchestrator from HKU. New in March.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/danveloper/flash-moe">danveloper/flash-moe</a></strong></td><td style="text-align:right; color:#888;">Obj-C/Metal · Unlicensed · 2.5k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Runs Qwen3.5-397B MoE on a MacBook (48GB) via pure C and Metal shaders. HN buzz: 393 pts. New in March.</td></tr>
+</table>
+
+<h2>Developer Tools / Skills Ecosystem</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/shareAI-lab/learn-claude-code">shareAI-lab/learn-claude-code</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 32k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Build a Claude Code-like agent from scratch. +5,582/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/shanraisshan/claude-code-best-practice">shanraisshan/claude-code-best-practice</a></strong></td><td style="text-align:right; color:#888;">HTML · MIT · 30k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Community-curated best practices for Claude Code. +2,488/day.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/promptfoo/promptfoo">promptfoo/promptfoo</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 17k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">LLM eval and red-teaming toolkit. +5,473/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Crosstalk-Solutions/project-nomad">Crosstalk-Solutions/project-nomad</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 15k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Offline survival computer with AI knowledge access.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/luongnv89/claude-howto">luongnv89/claude-howto</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 15k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Visual guide to Claude Code with copy-paste templates. +3,336/day.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/jarrodwatts/claude-hud">jarrodwatts/claude-hud</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 13k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Real-time HUD for context usage, tokens, and agent progress in Claude Code.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/siddharthvaddem/openscreen">siddharthvaddem/openscreen</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 11k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Free, open-source screen recording — no watermarks or telemetry.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 10k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">JavaScript utility library focused on DX. +6,259 stars in one week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/phuryn/pm-skills">phuryn/pm-skills</a></strong></td><td style="text-align:right; color:#888;">Markdown · MIT · 8.4k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">100+ agentic skills for product managers.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/alirezarezvani/claude-skills">alirezarezvani/claude-skills</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 4k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">180+ production-ready skills marketplace for Claude Code. +1,561/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/MiniMax-AI/skills">MiniMax-AI/skills</a></strong></td><td style="text-align:right; color:#888;">C# · MIT · 3.9k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">MiniMax's official skills package. New in March.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Yeachan-Heo/oh-my-codex">Yeachan-Heo/oh-my-codex</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 2.9k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Hooks, agent teams, HUDs, and extensions for OpenAI Codex CLI.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/VoltAgent/awesome-codex-subagents">VoltAgent/awesome-codex-subagents</a></strong></td><td style="text-align:right; color:#888;">Markdown · MIT · 2.4k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">130+ specialized Codex subagents. New in March.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/louislva/claude-peers-mcp">louislva/claude-peers-mcp</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 1.1k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">MCP server for messaging between multiple Claude Code instances. New in March.</td></tr>
+</table>
+
+<h2>Web, Infrastructure, and Browser Automation</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/ItzCrazyKns/Vane">ItzCrazyKns/Vane</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 33k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Self-hosted AI search engine with RAG and multiple LLM backends.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/lightpanda-io/browser">lightpanda-io/browser</a></strong></td><td style="text-align:right; color:#888;">Zig · AGPL-3.0 · 22k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Headless browser in Zig for AI agents. Works with Playwright/Puppeteer. +8,700/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/alibaba/OpenSandbox">alibaba/OpenSandbox</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 7.4k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Sandbox for AI apps with Docker/K8s. Secure execution for AI-generated code. +2,349/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/ghostwright/phantom">ghostwright/phantom</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 652</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">AI co-worker with its own computer — self-evolving, persistent memory, MCP server. New in March.</td></tr>
+</table>
+
+<h2>Education and Research</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/f/prompts.chat">f/prompts.chat</a></strong></td><td style="text-align:right; color:#888;">HTML · CC0-1.0 · 156k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">The largest open prompt community.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/GoogleCloudPlatform/generative-ai">GoogleCloudPlatform/generative-ai</a></strong></td><td style="text-align:right; color:#888;">Jupyter · Apache-2.0 · 16k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Google Cloud's Gemini and Vertex AI samples. +2,810/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/THU-MAIC/OpenMAIC">THU-MAIC/OpenMAIC</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Apache-2.0 · 6.8k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Tsinghua's open multi-agent interaction research platform. New in March.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/NVIDIA/NemoClaw">NVIDIA/NemoClaw</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Apache-2.0 · 6.2k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">NVIDIA's agent harness extending NeMo into agentic coding. New in March.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/aiming-lab/AutoResearchClaw">aiming-lab/AutoResearchClaw</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 5.9k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Automated research agent for ML experiments. New in March.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/teng-lin/notebooklm-py">teng-lin/notebooklm-py</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 4.7k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Unofficial Python API for Google NotebookLM. +2,068/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/HKUDS/CLI-Anything">HKUDS/CLI-Anything</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 2.7k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Wraps any CLI tool into an AI agent-invokable tool. New in March.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/zarazhangrui/codebase-to-course">zarazhangrui/codebase-to-course</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 1.1k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Converts codebases into interactive HTML courses. New in March.</td></tr>
+</table>
+
+<h2>Data, OSINT, and Utilities</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/sherlock-project/sherlock">sherlock-project/sherlock</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 75k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Username search across 400+ social networks.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/PaddlePaddle/PaddleOCR">PaddlePaddle/PaddleOCR</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 74k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">OCR toolkit for 100+ languages, bridging images/PDFs and LLMs.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/vectorize-io/hindsight">vectorize-io/hindsight</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 4.8k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Data versioning and lineage tracking for ML pipelines. +2,000/week.</td></tr>
+
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/BigBodyCobain/Shadowbroker">BigBodyCobain/Shadowbroker</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 1.4k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">OSINT dashboard — jet tracking, satellites, seismic events. New in March.</td></tr>
+</table>
+
+<hr>
+<p style="color:#999; font-size:12px; text-align:center;">50 repositories · Sources: GitHub Trending, Trendshift, GitHub Open Source Weekly</p>
+]]></content:encoded>
+    </item>
+
+  </channel>
+</rss>
