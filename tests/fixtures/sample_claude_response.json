@@ -1,0 +1,43 @@
+{
+  "description": "March 2026 was dominated by AI tooling and developer infrastructure improvements.",
+  "categories": {
+    "AI / Machine Learning": [
+      {
+        "repo_name": "alice/cool-project",
+        "url": "https://github.com/alice/cool-project",
+        "language": "Python",
+        "license": "MIT",
+        "stars": "42k",
+        "summary": "A cool ML project that gained 5,000 stars this month."
+      },
+      {
+        "repo_name": "eve/ml-kit",
+        "url": "https://github.com/eve/ml-kit",
+        "language": "Python",
+        "license": "Apache-2.0",
+        "stars": "8.5k",
+        "summary": "ML toolkit for rapid prototyping."
+      }
+    ],
+    "Developer Tools / Skills Ecosystem": [
+      {
+        "repo_name": "bob/awesome-tool",
+        "url": "https://github.com/bob/awesome-tool",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": "15k",
+        "summary": "An awesome developer tool for code generation."
+      }
+    ],
+    "Web, Infrastructure, and Browser Automation": [
+      {
+        "repo_name": "carol/infra-lib",
+        "url": "https://github.com/carol/infra-lib",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": "12k",
+        "summary": "Infrastructure library for cloud-native deployments."
+      }
+    ]
+  }
+}

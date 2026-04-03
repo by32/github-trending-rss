@@ -1,0 +1,65 @@
+name: Monthly Trending Digest
+
+on:
+  schedule:
+    - cron: '0 12 1 * *'  # 1st of each month at 12:00 UTC
+  workflow_dispatch:        # Manual trigger for testing
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  generate-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Generate digest
+        uses: nick-fields/retry@v3
+        with:
+          timeout_minutes: 5
+          max_attempts: 3
+          retry_wait_seconds: 300
+          command: uv run python -m src.main
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed.xml
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "feat: add $(date -u +'%B %Y' -d '1 month ago' 2>/dev/null || date -u -v-1m +'%B %Y') trending digest"
+          git push
+
+  alert-on-failure:
+    runs-on: ubuntu-latest
+    needs: generate-digest
+    if: failure()
+
+    steps:
+      - name: Open issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `Digest generation failed — ${new Date().toISOString().slice(0, 7)}`;
+            const body = `The monthly trending digest workflow failed.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['bug']
+            });
