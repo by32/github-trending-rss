@@ -5,10 +5,148 @@
     <link>https://github.com/trending</link>
     <description>Monthly digest of the top 50 trending GitHub repositories, with a focus on AI/ML. Auto-generated.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2026 00:03:55 +0000</lastBuildDate>
     <atom:link href="https://byoungs.github.io/github-trending-rss/feed.xml" rel="self" type="application/rss+xml"/>
 
-    <item>
+        <item>
+      <title>GitHub Trending Digest — March 2026</title>
+      <link>https://github.com/trending</link>
+      <guid isPermaLink="false">github-trending-2026-03</guid>
+      <pubDate>Sat, 04 Apr 2026 00:03:55 +0000</pubDate>
+      <description>March 2026 was dominated by AI agent frameworks and coding assistants, with OpenClaw leading the charge as a cross-platform AI assistant gaining 20k+ stars. The ecosystem around Claude Code and similar tools exploded with skills, plugins, and orchestration frameworks. Notable trends include multi-agent systems, voice AI, and specialized tools for web scraping and data analysis.</description>
+      <content:encoded><![CDATA[
+
+<h2>AI / Machine Learning</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 347k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A cross-platform personal AI assistant that gained massive traction with 20k+ stars this month, positioning itself as 'the lobster way' to AI assistance.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/karpathy/autoresearch">karpathy/autoresearch</a></strong></td><td style="text-align:right; color:#888;">Python · Unknown · 65k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Andrej Karpathy's latest project enabling AI agents to automatically run research on single-GPU nanochat training, gaining 12k+ stars.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/msitarzewski/agency-agents">msitarzewski/agency-agents</a></strong></td><td style="text-align:right; color:#888;">Shell · MIT · 70k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A comprehensive AI agency framework featuring specialized agents from frontend wizards to Reddit ninjas, each with distinct personalities and proven deliverables.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/666ghj/MiroFish">666ghj/MiroFish</a></strong></td><td style="text-align:right; color:#888;">Python · AGPL-3.0 · 49k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A universal swarm intelligence engine for prediction tasks, combining simplicity with powerful collective intelligence capabilities.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/bytedance/deer-flow">bytedance/deer-flow</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 57k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">ByteDance's open-source long-horizon SuperAgent harness that handles complex tasks spanning minutes to hours using sandboxes, memory, and subagents.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 24k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An adaptive AI agent designed to grow and evolve with users, representing NousResearch's approach to personalized AI assistance.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/ruvnet/RuView">ruvnet/RuView</a></strong></td><td style="text-align:right; color:#888;">Rust · MIT · 46k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Revolutionary WiFi DensePose technology that transforms commodity WiFi signals into real-time human pose estimation and vital sign monitoring without cameras.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/TauricResearch/TradingAgents">TauricResearch/TradingAgents</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 47k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A multi-agent LLM framework specifically designed for financial trading, combining AI agents with market analysis capabilities.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/volcengine/OpenViking">volcengine/OpenViking</a></strong></td><td style="text-align:right; color:#888;">Python · AGPL-3.0 · 21k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An open-source context database designed for AI agents like OpenClaw, managing memory, resources, and skills through a unified file system paradigm.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/moeru-ai/airi">moeru-ai/airi</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 37k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A self-hosted AI companion capable of realtime voice chat and gaming, designed to bring waifu-style AI personalities into the real world.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/openai/symphony">openai/symphony</a></strong></td><td style="text-align:right; color:#888;">Elixir · Apache-2.0 · 15k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">OpenAI's project management system that transforms work into isolated, autonomous implementation runs, allowing teams to manage rather than supervise coding agents.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/microsoft/VibeVoice">microsoft/VibeVoice</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 36k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Microsoft's open-source frontier voice AI technology, representing their latest advancement in conversational AI interfaces.</td></tr>
+</table>
+
+<h2>Developer Tools / Skills Ecosystem</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/affaan-m/everything-claude-code">affaan-m/everything-claude-code</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 136k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A comprehensive agent harness performance optimization system for Claude Code and similar tools, focusing on skills, memory, and security.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/obra/superpowers">obra/superpowers</a></strong></td><td style="text-align:right; color:#888;">Shell · MIT · 134k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An agentic skills framework and software development methodology that promises practical, working solutions for AI-assisted development.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/anthropics/claude-code">anthropics/claude-code</a></strong></td><td style="text-align:right; color:#888;">Shell · Unknown · 108k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Anthropic's official agentic coding tool that lives in terminals, understands codebases, and handles routine tasks through natural language commands.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/shareAI-lab/learn-claude-code">shareAI-lab/learn-claude-code</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 48k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A nano Claude Code-like agent built from scratch, demonstrating that 'Bash is all you need' for creating effective coding assistants.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/anthropics/skills">anthropics/skills</a></strong></td><td style="text-align:right; color:#888;">Python · Unknown · 110k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Anthropic's public repository for agent skills, serving as the foundation for extending AI agent capabilities across various domains.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/anomalyco/opencode">anomalyco/opencode</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 137k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">The open-source coding agent alternative, providing developers with a transparent and customizable AI coding assistant.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/shanraisshan/claude-code-best-practice">shanraisshan/claude-code-best-practice</a></strong></td><td style="text-align:right; color:#888;">HTML · MIT · 31k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A collection of best practices for Claude Code usage, embodying the principle that 'practice made claude perfect'.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/gsd-build/get-shit-done">gsd-build/get-shit-done</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 47k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A lightweight meta-prompting and spec-driven development system for Claude Code, designed for practical productivity gains.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill">nextlevelbuilder/ui-ux-pro-max-skill</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 58k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An AI skill providing design intelligence for building professional UI/UX across multiple platforms, targeting design automation.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/googleworkspace/cli">googleworkspace/cli</a></strong></td><td style="text-align:right; color:#888;">Rust · Apache-2.0 · 24k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Google's unified command-line tool for Workspace services, dynamically built from Discovery Service and including AI agent skills.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/VoltAgent/awesome-openclaw-skills">VoltAgent/awesome-openclaw-skills</a></strong></td><td style="text-align:right; color:#888;">Unknown · MIT · 44k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A curated collection of 5,400+ OpenClaw skills filtered and categorized from the official registry, serving as the definitive skills resource.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/NVIDIA/NemoClaw">NVIDIA/NemoClaw</a></strong></td><td style="text-align:right; color:#888;">JavaScript · Apache-2.0 · 18k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">NVIDIA's secure implementation of OpenClaw running inside OpenShell with managed inference capabilities.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/luongnv89/claude-howto">luongnv89/claude-howto</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 18k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A visual, example-driven guide to Claude Code with copy-paste templates, bridging the gap from basic concepts to advanced agents.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/farion1231/cc-switch">farion1231/cc-switch</a></strong></td><td style="text-align:right; color:#888;">Rust · MIT · 38k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A cross-platform desktop tool providing unified access to Claude Code, Codex, OpenCode, OpenClaw, and Gemini CLI interfaces.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Yeachan-Heo/oh-my-claudecode">Yeachan-Heo/oh-my-claudecode</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 23k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A teams-first multi-agent orchestration system for Claude Code, enabling collaborative AI-assisted development workflows.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a></strong></td><td style="text-align:right; color:#888;">JavaScript · Apache-2.0 · 16k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A design language specifically created to improve AI harness performance in design-related tasks and workflows.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/tanweai/pua">tanweai/pua</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 15k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A provocative AI agent skill that simulates a P8-level engineer on a performance improvement plan, designed for high-performance motivation.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Yeachan-Heo/oh-my-codex">Yeachan-Heo/oh-my-codex</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 14k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An extension system for Codex adding hooks, agent teams, HUDs, and enhanced functionality to the base coding assistant.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/qwibitai/nanoclaw">qwibitai/nanoclaw</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 26k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A lightweight, containerized alternative to OpenClaw with messaging app integrations and built on Anthropic's Agents SDK.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/ChinaSiro/claude-code-sourcemap">ChinaSiro/claude-code-sourcemap</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 8k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A sourcemap tool for Claude Code development, though specific functionality details are not provided in the description.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/jackwener/opencli">jackwener/opencli</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Apache-2.0 · 13k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An open-source CLI tool, though specific functionality is not detailed in the provided description.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/rtk-ai/rtk">rtk-ai/rtk</a></strong></td><td style="text-align:right; color:#888;">Rust · Apache-2.0 · 17k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A CLI proxy that dramatically reduces LLM token consumption by 60-90% on common development commands, delivered as a single Rust binary.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/jarrodwatts/claude-hud">jarrodwatts/claude-hud</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 17k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A Claude Code plugin providing real-time visibility into context usage, active tools, running agents, and todo progress.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 45k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An intelligent Claude Code plugin that automatically captures, compresses, and injects relevant context from previous coding sessions.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/openai/codex-plugin-cc">openai/codex-plugin-cc</a></strong></td><td style="text-align:right; color:#888;">JavaScript · Apache-2.0 · 11k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">OpenAI's official plugin enabling Codex integration within Claude Code for code review and task delegation.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/badlogic/pi-mono">badlogic/pi-mono</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 31k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A comprehensive AI agent toolkit featuring coding agent CLI, unified LLM API, TUI/web libraries, and deployment tools.</td></tr>
+</table>
+
+<h2>Web, Infrastructure, and Browser Automation</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/paperclipai/paperclip">paperclipai/paperclip</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 46k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An open-source orchestration platform designed for zero-human companies, automating entire business workflows without human intervention.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/alibaba/page-agent">alibaba/page-agent</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 15k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Alibaba's JavaScript in-page GUI agent that enables natural language control of web interfaces, gaining significant traction this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/firecrawl/firecrawl">firecrawl/firecrawl</a></strong></td><td style="text-align:right; color:#888;">TypeScript · AGPL-3.0 · 104k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">The Web Data API for AI that converts entire websites into LLM-ready markdown or structured data, essential for AI training pipelines.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/lightpanda-io/browser">lightpanda-io/browser</a></strong></td><td style="text-align:right; color:#888;">Zig · AGPL-3.0 · 27k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A headless browser specifically designed for AI and automation tasks, built with Zig for performance and reliability.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/D4Vinci/Scrapling">D4Vinci/Scrapling</a></strong></td><td style="text-align:right; color:#888;">Python · BSD-3-Clause · 35k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An adaptive web scraping framework that scales from single requests to full crawls, handling modern web challenges automatically.</td></tr>
+</table>
+
+<h2>Education and Research</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Crosstalk-Solutions/project-nomad">Crosstalk-Solutions/project-nomad</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Apache-2.0 · 21k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Project N.O.M.A.D is a self-contained offline survival computer with critical tools, knowledge, and AI for emergency preparedness and remote operations.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/THU-MAIC/OpenMAIC">THU-MAIC/OpenMAIC</a></strong></td><td style="text-align:right; color:#888;">TypeScript · AGPL-3.0 · 14k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Tsinghua University's Open Multi-Agent Interactive Classroom providing immersive, multi-agent learning experiences in a single click.</td></tr>
+</table>
+
+<h2>Data, OSINT, and Utilities</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/koala73/worldmonitor">koala73/worldmonitor</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 46k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A real-time global intelligence dashboard combining AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking for situational awareness.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/ZhuLinsen/daily_stock_analysis">ZhuLinsen/daily_stock_analysis</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 28k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An LLM-driven stock analysis system for A/H/US markets combining real-time news, market data, and AI decision dashboards with zero-cost automated operation.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/FujiwaraChoki/MoneyPrinterV2">FujiwaraChoki/MoneyPrinterV2</a></strong></td><td style="text-align:right; color:#888;">Python · AGPL-3.0 · 28k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An automation system designed to generate online income through various digital strategies and workflows.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 18k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An AI agent skill that researches topics across Reddit, X, YouTube, HN, and Polymarket, then synthesizes grounded summaries from multiple sources.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/abhigyanpatwari/GitNexus">abhigyanpatwari/GitNexus</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 21k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">A zero-server code intelligence engine that creates interactive knowledge graphs from GitHub repos or ZIP files, featuring built-in Graph RAG agents.</td></tr>
+</table>
+
+<hr>
+<p style="color:#999; font-size:12px; text-align:center;">50 repositories · Sources: GitHub Trending, OSS Insight</p>
+]]></content:encoded>
+    </item>
+
+<item>
       <title>GitHub Trending Digest — March 2026</title>
       <link>https://github.com/trending</link>
       <guid isPermaLink="false">github-trending-2026-03</guid>
