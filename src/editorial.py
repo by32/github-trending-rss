@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 import time
 
 import anthropic
@@ -76,6 +77,14 @@ def build_prompt(repos: list[dict], month_label: str) -> str:
     )
 
 
+def _extract_json(text: str) -> str:
+    """Strip markdown fences if Claude wraps JSON in them."""
+    match = re.search(r"```(?:json)?\s*\n(.*?)\n```", text, re.DOTALL)
+    if match:
+        return match.group(1)
+    return text.strip()
+
+
 def call_claude(prompt: str, api_key: str) -> dict:
     """Call Anthropic Messages API with Claude Sonnet and return parsed JSON.
 
@@ -88,16 +97,15 @@ def call_claude(prompt: str, api_key: str) -> dict:
         try:
             message = client.messages.create(
                 model="claude-sonnet-4-20250514",
-                max_tokens=4096,
+                max_tokens=16384,
                 temperature=0.3,
                 system=SYSTEM_PROMPT,
                 messages=[{"role": "user", "content": prompt}],
             )
-            text = message.content[0].text
+            text = _extract_json(message.content[0].text)
             return json.loads(text)
         except json.JSONDecodeError:
             if attempt < 2:
-                # Retry once asking for valid JSON
                 logger.warning("Claude returned invalid JSON, retrying with correction")
                 prompt = prompt + "\n\nYour previous response was not valid JSON. Please return ONLY valid JSON."
                 continue

@@ -8,7 +8,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from src.editorial import CATEGORIES, build_prompt, call_claude, parse_editorial_response
+from src.editorial import CATEGORIES, _extract_json, build_prompt, call_claude, parse_editorial_response
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
@@ -42,6 +42,25 @@ class TestBuildPrompt:
         assert "April 2026" in prompt
 
 
+class TestExtractJson:
+    def test_plain_json(self):
+        assert _extract_json('{"a": 1}') == '{"a": 1}'
+
+    def test_markdown_fences(self):
+        text = '```json\n{"a": 1}\n```'
+        assert _extract_json(text) == '{"a": 1}'
+
+    def test_markdown_fences_no_lang(self):
+        text = '```\n{"a": 1}\n```'
+        assert _extract_json(text) == '{"a": 1}'
+
+    def test_fenced_json_parses(self):
+        sample = json.loads((FIXTURES / "sample_claude_response.json").read_text())
+        fenced = f"```json\n{json.dumps(sample)}\n```"
+        result = json.loads(_extract_json(fenced))
+        assert "categories" in result
+
+
 class TestCallClaude:
     def test_success(self):
         sample = json.loads((FIXTURES / "sample_claude_response.json").read_text())
@@ -56,6 +75,20 @@ class TestCallClaude:
 
         assert "categories" in result
         assert "description" in result
+
+    def test_strips_markdown_fences(self):
+        sample = json.loads((FIXTURES / "sample_claude_response.json").read_text())
+        fenced = f"```json\n{json.dumps(sample)}\n```"
+        mock_message = MagicMock()
+        mock_message.content = [MagicMock(text=fenced)]
+
+        mock_client = MagicMock()
+        mock_client.messages.create.return_value = mock_message
+
+        with patch("src.editorial.anthropic.Anthropic", return_value=mock_client):
+            result = call_claude("test prompt", api_key="fake-key")
+
+        assert "categories" in result
 
     def test_invalid_json_retries(self):
         sample = json.loads((FIXTURES / "sample_claude_response.json").read_text())
