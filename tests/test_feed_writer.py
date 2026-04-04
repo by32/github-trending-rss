@@ -5,7 +5,7 @@ from __future__ import annotations
 import shutil
 from pathlib import Path
 
-from src.feed_writer import build_item_html, build_item_xml, prepend_item_to_feed
+from src.feed_writer import build_item_html, build_item_xml, prepend_item_to_feed, update_landing_page
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
@@ -192,3 +192,58 @@ class TestPrependItemToFeed:
         assert content.count("</item>") == 2
         assert content.count("<channel>") == 1
         assert content.count("</channel>") == 1
+
+
+class TestUpdateLandingPage:
+    def test_inserts_digest_content(self, tmp_path):
+        index = tmp_path / "index.html"
+        index.write_text(
+            "<html><body>\n"
+            "<!-- DIGEST_START -->\n"
+            "<!-- DIGEST_END -->\n"
+            "</body></html>"
+        )
+        update_landing_page(
+            str(index), SAMPLE_CATEGORIES, "Test description", "March 2026"
+        )
+
+        content = index.read_text()
+        assert "March 2026" in content
+        assert "alice/cool-project" in content
+        assert "Test description" in content
+
+    def test_replaces_existing_digest(self, tmp_path):
+        index = tmp_path / "index.html"
+        index.write_text(
+            "<html><body>\n"
+            "<!-- DIGEST_START -->\n"
+            "<p>Old content</p>\n"
+            "<!-- DIGEST_END -->\n"
+            "</body></html>"
+        )
+        update_landing_page(
+            str(index), SAMPLE_CATEGORIES, "New description", "April 2026"
+        )
+
+        content = index.read_text()
+        assert "Old content" not in content
+        assert "April 2026" in content
+        assert "New description" in content
+
+    def test_preserves_surrounding_html(self, tmp_path):
+        index = tmp_path / "index.html"
+        index.write_text(
+            "<html><head><title>Test</title></head><body>\n"
+            "<h1>Header</h1>\n"
+            "<!-- DIGEST_START -->\n"
+            "<!-- DIGEST_END -->\n"
+            "<footer>Footer</footer>\n"
+            "</body></html>"
+        )
+        update_landing_page(
+            str(index), SAMPLE_CATEGORIES, "Desc", "March 2026"
+        )
+
+        content = index.read_text()
+        assert "<h1>Header</h1>" in content
+        assert "<footer>Footer</footer>" in content

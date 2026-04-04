@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add feed.xml
+          git add feed.xml index.html
           git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "feat: add $(date -u +'%B %Y' -d '1 month ago' 2>/dev/null || date -u -v-1m +'%B %Y') trending digest"
           git push

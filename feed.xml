@@ -6,7 +6,7 @@
     <description>Monthly digest of the top 50 trending GitHub repositories, with a focus on AI/ML. Auto-generated.</description>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Apr 2026 00:03:55 +0000</lastBuildDate>
-    <atom:link href="https://byoungs.github.io/github-trending-rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://by32.github.io/github-trending-rss/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
       <title>GitHub Trending Digest — March 2026</title>

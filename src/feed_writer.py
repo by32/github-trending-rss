@@ -125,3 +125,32 @@ def prepend_item_to_feed(feed_path: str, item_xml: str, build_date: str) -> None
 
     with open(feed_path, "w") as f:
         f.write(content)
+
+
+def update_landing_page(
+    index_path: str,
+    categories: dict[str, list],
+    description: str,
+    month_label: str,
+) -> None:
+    """Replace the digest section in index.html with the latest month's content."""
+    html = build_item_html(categories, month_label)
+
+    digest_content = (
+        f'<h2 class="digest-title">GitHub Trending Digest — {month_label}</h2>\n'
+        f'    <p class="digest-desc">{description}</p>\n'
+        f"    {html}\n"
+    )
+
+    with open(index_path) as f:
+        content = f.read()
+
+    content = re.sub(
+        r"<!-- DIGEST_START -->.*?<!-- DIGEST_END -->",
+        f"<!-- DIGEST_START -->\n    {digest_content}    <!-- DIGEST_END -->",
+        content,
+        flags=re.DOTALL,
+    )
+
+    with open(index_path, "w") as f:
+        f.write(content)

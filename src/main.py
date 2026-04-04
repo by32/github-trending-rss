@@ -9,13 +9,14 @@ from datetime import datetime, timezone
 from email.utils import format_datetime
 
 from src.editorial import build_prompt, call_claude, parse_editorial_response
-from src.feed_writer import build_item_xml, prepend_item_to_feed
+from src.feed_writer import build_item_xml, prepend_item_to_feed, update_landing_page
 from src.fetch import enrich_with_github, fetch_trending
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
 FEED_PATH = "feed.xml"
+INDEX_PATH = "index.html"
 
 
 def _previous_month(now: datetime) -> tuple[str, str]:
@@ -76,7 +77,11 @@ def main() -> None:
     )
     prepend_item_to_feed(FEED_PATH, item_xml, build_date)
 
-    logger.info("Done — %s digest written to %s", month_label, FEED_PATH)
+    # 5. Update landing page with latest digest
+    logger.info("Updating landing page...")
+    update_landing_page(INDEX_PATH, categories, description, month_label)
+
+    logger.info("Done — %s digest written to %s and %s", month_label, FEED_PATH, INDEX_PATH)
 
 
 if __name__ == "__main__":
