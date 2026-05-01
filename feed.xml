@@ -5,10 +5,148 @@
     <link>https://github.com/trending</link>
     <description>Monthly digest of the top 50 trending GitHub repositories, with a focus on AI/ML. Auto-generated.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Apr 2026 00:03:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 12:23:26 +0000</lastBuildDate>
     <atom:link href="https://by32.github.io/github-trending-rss/feed.xml" rel="self" type="application/rss+xml"/>
 
-    <item>
+        <item>
+      <title>GitHub Trending Digest — April 2026</title>
+      <link>https://github.com/trending</link>
+      <guid isPermaLink="false">github-trending-2026-04</guid>
+      <pubDate>Fri, 01 May 2026 12:23:26 +0000</pubDate>
+      <description>April 2026 was dominated by the Claude Code ecosystem, with AI coding agents and skills frameworks taking center stage. The month saw explosive growth in agent-native development tools, with repositories like ultraworkers/claw-code achieving record-breaking star velocity. A clear trend emerged toward specialized AI skills, memory systems, and agent orchestration platforms.</description>
+      <content:encoded><![CDATA[
+
+<h2>AI / Machine Learning</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 127k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">An adaptive AI agent system that evolves with user interactions. Gained 18k stars this month as part of the growing agent ecosystem trend.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/MemPalace/mempalace">MemPalace/mempalace</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 51k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open-source AI memory system with strong benchmarking results. Represents the growing focus on persistent memory for AI agents.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 367k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Cross-platform personal AI assistant with distinctive 'lobster way' branding. Maintains massive user base with steady 5k monthly growth.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/multica-ai/multica">multica-ai/multica</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 23k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Managed agents platform for turning coding agents into collaborative teammates. Gained 4k stars as organizations adopt agent workflows.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/anomalyco/opencode">anomalyco/opencode</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 153k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open source coding agent competing directly with proprietary solutions. Steady growth of 3k stars reflects demand for open alternatives.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/paperclipai/paperclip">paperclipai/paperclip</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 61k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Orchestration platform for fully automated companies with zero human intervention. Gained 3k stars as businesses explore autonomous operations.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/alchaincyf/nuwa-skill">alchaincyf/nuwa-skill</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 17k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Chinese-language skill for distilling anyone's thinking patterns and decision-making processes. Gained 3k stars with focus on cognitive modeling.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/karpathy/autoresearch">karpathy/autoresearch</a></strong></td><td style="text-align:right; color:#888;">Python · Unknown · 78k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">AI agents conducting automated research on single-GPU training setups. Gained 3k stars as Karpathy's latest contribution to automated ML research.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/TauricResearch/TradingAgents">TauricResearch/TradingAgents</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 59k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Multi-agent LLM framework specifically designed for financial trading applications. Steady 2k star growth reflects AI adoption in finance.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/666ghj/MiroFish">666ghj/MiroFish</a></strong></td><td style="text-align:right; color:#888;">Python · AGPL-3.0 · 59k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Universal swarm intelligence engine for general prediction tasks. Gained 2k stars with its simple yet comprehensive approach to collective AI.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/microsoft/VibeVoice">microsoft/VibeVoice</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 46k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Microsoft's open-source frontier voice AI technology. Gained 2k stars as voice interfaces become central to agent interactions.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/shiyu-coder/Kronos">shiyu-coder/Kronos</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 22k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Foundation model specialized for financial market language and analysis. Gained 2k stars as domain-specific LLMs gain traction.</td></tr>
+</table>
+
+<h2>Developer Tools / Skills Ecosystem</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/forrestchang/andrej-karpathy-skills">forrestchang/andrej-karpathy-skills</a></strong></td><td style="text-align:right; color:#888;">Unknown · Unknown · 104k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Single CLAUDE.md file distilling Karpathy's LLM coding insights for improved Claude behavior. Explosive 14k star growth shows hunger for expert-derived AI skills.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/ultraworkers/claw-code">ultraworkers/claw-code</a></strong></td><td style="text-align:right; color:#888;">Rust · Unknown · 189k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Recently unlocked repository claiming fastest path to 100k stars in GitHub history. Built with Rust and oh-my-codex, gained 17k stars this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/VoltAgent/awesome-design-md">VoltAgent/awesome-design-md</a></strong></td><td style="text-align:right; color:#888;">Unknown · MIT · 69k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Collection of DESIGN.md files inspired by brand design systems for agent-generated UIs. Gained 13k stars as design-driven development gains momentum.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 52k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Claude Code skill that reduces token usage by 65% through caveman-style communication. Gained 8k stars for its practical token optimization approach.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/obra/superpowers">obra/superpowers</a></strong></td><td style="text-align:right; color:#888;">Shell · MIT · 175k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Agentic skills framework and development methodology with proven track record. Gained 7k stars as developers seek structured approaches to agent development.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/affaan-m/everything-claude-code">affaan-m/everything-claude-code</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 171k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Comprehensive agent harness optimization system covering skills, memory, and security for multiple coding agents. Gained 7k stars for its all-in-one approach.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/santifer/career-ops">santifer/career-ops</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 41k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">AI-powered job search system with 14 skill modes and comprehensive tooling built on Claude Code. Gained 7k stars as job seekers embrace AI assistance.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/mattpocock/skills">mattpocock/skills</a></strong></td><td style="text-align:right; color:#888;">Shell · MIT · 51k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Personal directory of skills from Matt Pocock's .claude directory. Gained 5k stars as developers share their curated skill collections.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/safishamsi/graphify">safishamsi/graphify</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 39k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">AI coding assistant skill that converts code, docs, and images into queryable knowledge graphs. Gained 6k stars for its universal compatibility across agents.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/garrytan/gstack">garrytan/gstack</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 88k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Garry Tan's complete Claude Code setup with 23 opinionated tools covering CEO to QA roles. Gained 5k stars as entrepreneurs adopt proven agent workflows.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a></strong></td><td style="text-align:right; color:#888;">Shell · MIT · 27k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Production-grade engineering skills for AI coding agents from Google's Addy Osmani. Gained 5k stars for enterprise-ready agent capabilities.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 71k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Claude Code plugin that automatically captures and compresses coding sessions for future context injection. Gained 4k stars for solving agent memory persistence.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Gitlawb/openclaude">Gitlawb/openclaude</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 25k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open-source coding agent CLI supporting 200+ models via OpenAI-compatible APIs. Gained 5k stars for its broad model compatibility.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/msitarzewski/agency-agents">msitarzewski/agency-agents</a></strong></td><td style="text-align:right; color:#888;">Shell · MIT · 90k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Complete AI agency toolkit with specialized agents from frontend wizards to community managers. Gained 4k stars for its comprehensive agent roster.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/rtk-ai/rtk">rtk-ai/rtk</a></strong></td><td style="text-align:right; color:#888;">Rust · Apache-2.0 · 39k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">CLI proxy reducing LLM token consumption by 60-90% on common dev commands. Gained 4k stars for its single binary, zero-dependency approach.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Alishahryar1/free-claude-code">Alishahryar1/free-claude-code</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 19k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Free Claude Code alternative for terminal, VSCode, and Discord usage. Gained 3k stars as developers seek cost-effective coding agent solutions.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/anthropics/claude-code">anthropics/claude-code</a></strong></td><td style="text-align:right; color:#888;">Shell · Unknown · 120k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Official Anthropic agentic coding tool for terminal-based development with natural language commands. Gained 4k stars as the foundational reference implementation.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/shanraisshan/claude-code-best-practice">shanraisshan/claude-code-best-practice</a></strong></td><td style="text-align:right; color:#888;">HTML · MIT · 50k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Comprehensive guide transitioning from casual coding to agentic engineering practices. Gained 3k stars for bridging the gap between vibe coding and professional agent development.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/farion1231/cc-switch">farion1231/cc-switch</a></strong></td><td style="text-align:right; color:#888;">Rust · MIT · 57k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Cross-platform desktop tool unifying Claude Code, Codex, OpenCode, and other coding agents. Gained 3k stars for its all-in-one agent management approach.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/anthropics/skills">anthropics/skills</a></strong></td><td style="text-align:right; color:#888;">Python · Unknown · 127k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Official Anthropic repository for Agent Skills with 3k monthly growth. Serves as the canonical reference for skill development and best practices.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Yeachan-Heo/oh-my-codex">Yeachan-Heo/oh-my-codex</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 27k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Codex enhancement framework adding hooks, agent teams, and HUDs to coding environments. Gained 4k stars for extending basic coding agents with advanced features.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a></strong></td><td style="text-align:right; color:#888;">Unknown · AGPL-3.0 · 51k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Agentic development environment evolved from terminal foundations. Gained 2k stars as terminal-based development embraces AI-native workflows.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill">nextlevelbuilder/ui-ux-pro-max-skill</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 73k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">AI skill providing design intelligence for professional multi-platform UI/UX development. Gained 3k stars as design-focused agent capabilities mature.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/luongnv89/claude-howto">luongnv89/claude-howto</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 31k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Visual, example-driven guide to Claude Code with copy-paste templates for immediate value. Gained 3k stars for its practical, hands-on learning approach.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/garrytan/gbrain">garrytan/gbrain</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 13k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Garry Tan's opinionated OpenClaw/Hermes Agent Brain configuration. Gained 2k stars as entrepreneurs adopt proven agent setups from successful founders.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/badlogic/pi-mono">badlogic/pi-mono</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 43k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Comprehensive AI agent toolkit including CLI, unified LLM API, TUI/web libraries, and Slack bot. Gained 2k stars for its monorepo approach to agent tooling.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/gsd-build/get-shit-done">gsd-build/get-shit-done</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 59k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Lightweight meta-prompting and spec-driven development system for Claude Code by TÂCHES. Gained 2k stars for its no-nonsense approach to agent productivity.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/titanwings/colleague-skill">titanwings/colleague-skill</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 17k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Skill that transforms cold professional interactions into warm, engaging experiences. Gained 2k stars for humanizing digital workplace interactions.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/HKUDS/OpenHarness">HKUDS/OpenHarness</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 12k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open agent harness with built-in personal agent called Ohmo. Gained 2k stars as academic institutions contribute to agent infrastructure.</td></tr>
+</table>
+
+<h2>Web, Infrastructure, and Browser Automation</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/siddharthvaddem/openscreen">siddharthvaddem/openscreen</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 34k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open-source Screen Studio alternative for creating stunning demos without subscriptions or watermarks. Gained 4k stars as creators seek free alternatives to expensive demo tools.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/heygen-com/hyperframes">heygen-com/hyperframes</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Apache-2.0 · 14k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Framework for writing HTML that renders to video, specifically built for agent workflows. Gained 2k stars as video generation becomes agent-accessible.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/chenglou/pretext">chenglou/pretext</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 46k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Fast, accurate text measurement and layout library for precise typography control. Gained 3k stars for solving fundamental text rendering challenges.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/abhigyanpatwari/GitNexus">abhigyanpatwari/GitNexus</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 34k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Zero-server code intelligence engine creating interactive knowledge graphs from GitHub repos entirely in-browser. Gained 2k stars for its client-side approach to code analysis.</td></tr>
+</table>
+
+<h2>Education and Research</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 23k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Agent-native personalized learning assistant from Hong Kong University. Gained 2k stars as educational institutions develop AI-powered tutoring systems.</td></tr>
+</table>
+
+<h2>Data, OSINT, and Utilities</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Fincept-Corporation/FinceptTerminal">Fincept-Corporation/FinceptTerminal</a></strong></td><td style="text-align:right; color:#888;">Python · Unknown · 18k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Modern finance application offering advanced market analytics and investment research tools. Gained 2k stars as financial professionals adopt AI-enhanced analysis platforms.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/NawfalMotii79/PLFM_RADAR">NawfalMotii79/PLFM_RADAR</a></strong></td><td style="text-align:right; color:#888;">PLSQL · Unknown · 19k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open-source, low-cost 10.5 GHz PLFM phased array RADAR system implementation. Gained 2k stars for democratizing advanced radar technology.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Z4nzu/hackingtool">Z4nzu/hackingtool</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 70k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">All-in-one hacking tool collection for security professionals and researchers. Steady 2k star growth reflects continued interest in security tooling.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/elder-plinius/CL4R1T4S">elder-plinius/CL4R1T4S</a></strong></td><td style="text-align:right; color:#888;">Unknown · AGPL-3.0 · 26k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Collection of leaked system prompts from major AI systems including ChatGPT, Claude, and others. Gained 2k stars for transparency in AI system operations.</td></tr>
+</table>
+
+<hr>
+<p style="color:#999; font-size:12px; text-align:center;">50 repositories · Sources: GitHub Trending, OSS Insight</p>
+]]></content:encoded>
+    </item>
+
+<item>
       <title>GitHub Trending Digest — March 2026</title>
       <link>https://github.com/trending</link>
       <guid isPermaLink="false">github-trending-2026-03</guid>
