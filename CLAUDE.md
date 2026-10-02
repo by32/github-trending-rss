@@ -9,7 +9,7 @@ A static RSS feed site hosted on GitHub Pages at `https://byoungs.github.io/gith
 ## Architecture
 
 ```
-OSS Insight API → src/fetch.py (top 50 repos + GitHub API enrichment)
+github.com/trending?since=monthly → src/fetch.py (25 repos + GitHub API enrichment)
     → src/editorial.py (Claude Sonnet categorization + summaries)
     → src/feed_writer.py (build RSS item XML, prepend to feed.xml)
     → src/main.py (orchestrator, entry point)
@@ -28,7 +28,7 @@ uv run python -m src.main       # Run pipeline locally (needs ANTHROPIC_API_KEY)
 
 - `feed.xml` — RSS 2.0 feed with `content:encoded` CDATA blocks. New items are **prepended** (most recent first).
 - `index.html` — Static landing page. Rarely changes.
-- `src/fetch.py` — OSS Insight + GitHub REST API data collection
+- `src/fetch.py` — GitHub Trending page parsing + GitHub REST API enrichment
 - `src/editorial.py` — Claude Sonnet prompt construction + response parsing
 - `src/feed_writer.py` — XML item generation + feed prepend logic
 - `src/main.py` — Pipeline orchestrator

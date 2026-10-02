@@ -60,7 +60,7 @@ def build_item_html(categories: dict[str, list], month_label: str) -> str:
     total = sum(len(repos) for repos in categories.values())
     parts.append(
         f'\n<hr>\n<p style="color:#999; font-size:12px; text-align:center;">'
-        f"{total} repositories \u00b7 Sources: GitHub Trending, OSS Insight</p>"
+        f"{total} repositories \u00b7 Source: GitHub Trending</p>"
     )
 
     return "".join(parts)

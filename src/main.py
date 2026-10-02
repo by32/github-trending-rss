@@ -49,7 +49,7 @@ def main() -> None:
     logger.info("Generating digest for %s", month_label)
 
     # 1. Fetch trending repos
-    logger.info("Fetching trending repos from OSS Insight...")
+    logger.info("Fetching trending repos from GitHub Trending...")
     repos = fetch_trending(limit=50)
     logger.info("Fetched %d repos", len(repos))
 

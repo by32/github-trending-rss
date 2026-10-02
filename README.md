@@ -1,6 +1,6 @@
 # GitHub Trending Digest — RSS Feed
 
-Monthly RSS feed of the top 50 trending GitHub repositories, auto-generated and hosted on GitHub Pages.
+Monthly RSS feed of the top trending GitHub repositories, auto-generated and hosted on GitHub Pages.
 
 ## Subscribe
 
@@ -14,7 +14,7 @@ https://byoungs.github.io/github-trending-rss/feed.xml
 
 A GitHub Actions workflow runs on the 1st of each month:
 
-1. Fetches trending repos from the [OSS Insight](https://ossinsight.io) API
+1. Reads the monthly [GitHub Trending](https://github.com/trending?since=monthly) page (25 repos, in GitHub's order). OSS Insight, the original source, stopped publishing its trending ranking in 2026.
 2. Enriches each repo with license and total star count via the GitHub REST API
 3. Sends the structured data to Claude Sonnet for categorization and summary writing
 4. Prepends a new `<item>` to `feed.xml` and pushes to `main`
@@ -23,7 +23,7 @@ GitHub Pages serves the updated feed automatically.
 
 ## What's included
 
-Each monthly item covers ~50 repos grouped by category (AI/ML, DevTools, Infrastructure, etc.) with repo links, language, license, star count, and a short summary.
+Each monthly item covers ~25 repos grouped by category (AI/ML, DevTools, Infrastructure, etc.) with repo links, language, license, star count, and a short summary.
 
 ## Development
 
