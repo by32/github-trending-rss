@@ -5,10 +5,94 @@
     <link>https://github.com/trending</link>
     <description>Monthly digest of the top 50 trending GitHub repositories, with a focus on AI/ML. Auto-generated.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jun 2026 14:04:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 22:29:04 +0000</lastBuildDate>
     <atom:link href="https://by32.github.io/github-trending-rss/feed.xml" rel="self" type="application/rss+xml"/>
 
-            <item>
+                <item>
+      <title>GitHub Trending Digest — September 2026</title>
+      <link>https://github.com/trending</link>
+      <guid isPermaLink="false">github-trending-2026-09</guid>
+      <pubDate>Fri, 02 Oct 2026 22:29:04 +0000</pubDate>
+      <description>September 2026 was dominated by tooling around AI coding agents: skills, memory, context optimization, security scanning, and plugin ecosystems from Anthropic, Cursor, and others. Several repos gained tens of thousands of stars in a single month, led by archify, gods-eye-view, and ponytail. Outside the agent space, real-time geospatial intelligence, RAG knowledge platforms, and Rust GUI tooling also drew strong interest.</description>
+      <content:encoded><![CDATA[
+
+<h2>AI / Machine Learning</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a></strong></td><td style="text-align:right; color:#888;">Go · Apache-2.0 · 43k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Hybrid code review tool from Alibaba that combines deterministic pipelines with an LLM agent to produce line-level comments, with built-in rules for NPEs, thread-safety, XSS and SQL injection. Gained about 22k stars this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/Tencent/WeKnora">Tencent/WeKnora</a></strong></td><td style="text-align:right; color:#888;">Go · Unknown · 32k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open-source LLM knowledge platform that turns documents into a queryable RAG system, a reasoning agent, and a self-maintaining wiki. Added about 11k stars this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/vectorize-io/hindsight">vectorize-io/hindsight</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 45k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Agent memory system that learns over time, gaining about 22k stars in the month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/TencentCloud/Octop">TencentCloud/Octop</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 6k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Self-hosted, multi-user, multi-agent AI assistant. Grew quickly from a small base, adding about 4.9k stars this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/trycua/cua">trycua/cua</a></strong></td><td style="text-align:right; color:#888;">Rust · MIT · 28k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open-source drivers, cross-OS fleets and benchmarks for scaling computer-use agents, covering training, evaluation and data generation.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/tashfeenahmed/freellmapi">tashfeenahmed/freellmapi</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 30k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Aggregates 34 free LLM providers and 635 model endpoints behind one /v1 OpenAI-compatible endpoint, with smart routing and automatic failover. Intended for personal experimentation only.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/anthropics/financial-services">anthropics/financial-services</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 39k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Anthropic repository for financial services use cases, with no description provided. Added about 3.9k stars this month.</td></tr>
+</table>
+
+<h2>Developer Tools / Skills Ecosystem</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 271k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Agent harness optimization system covering skills, memory, security and research-first development for Claude Code, Codex, Opencode and Cursor. The largest repo on this list by total stars, with about 26k gained this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/ayghri/i-have-adhd">ayghri/i-have-adhd</a></strong></td><td style="text-align:right; color:#888;">Python · MIT · 53k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Skill that keeps coding agents from burying the answer by producing ADHD-friendly output. Gained about 27k stars this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/tt-a1i/archify">tt-a1i/archify</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 76k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Agent skill that generates architecture, workflow, sequence and data-flow diagrams as self-contained HTML with motion and export. Had the highest monthly gain on the list at about 35k stars.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/paperclipai/paperclip">paperclipai/paperclip</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 96k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open-source app for managing agents at work, adding about 16k stars this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/mksglu/context-mode">mksglu/context-mode</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 25k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Context window optimization for AI coding agents that sandboxes tool output (claimed 98% reduction) and persists session memory. Works across 17 platforms via MCP and hooks.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/superdesigndev/treg">superdesigndev/treg</a></strong></td><td style="text-align:right; color:#888;">Python · Unknown · 4k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Pitched as OpenRouter for agent tools. Most of its stars (about 3.2k of 4k) came this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/DietrichGebert/ponytail">DietrichGebert/ponytail</a></strong></td><td style="text-align:right; color:#888;">JavaScript · MIT · 152k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Makes an AI agent behave like the laziest senior dev, on the principle that the best code is the code you never wrote. Gained about 31k stars this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/anthropics/claude-code">anthropics/claude-code</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 149k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Anthropic's terminal-based agentic coding tool that understands your codebase and handles routine tasks and git workflows through natural language. Added about 5.8k stars this month.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/cursor/plugins">cursor/plugins</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Unknown · 9k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Cursor plugin specification and official plugins, adding about 3k stars as agent ecosystems standardize on plugins.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/max-sixty/worktrunk">max-sixty/worktrunk</a></strong></td><td style="text-align:right; color:#888;">Rust · Unknown · 9k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">CLI for Git worktree management designed for parallel AI agent workflows.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/anthropics/knowledge-work-plugins">anthropics/knowledge-work-plugins</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 26k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open-source plugins aimed at knowledge workers using Claude Cowork.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/NVIDIA/SkillSpector">NVIDIA/SkillSpector</a></strong></td><td style="text-align:right; color:#888;">Python · Apache-2.0 · 19k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Security scanner for agent skills that detects prompt injection, data exfiltration, malicious patterns and supply-chain risks in Claude Code, Codex and MCP skills before installation.</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/longbridge/gpui-kit">longbridge/gpui-kit</a></strong></td><td style="text-align:right; color:#888;">Rust · Unknown · 16k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Rust GUI components for building cross-platform desktop applications with GPUI.</td></tr>
+</table>
+
+<h2>Web, Infrastructure, and Browser Automation</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/heygen-com/hyperframes">heygen-com/hyperframes</a></strong></td><td style="text-align:right; color:#888;">TypeScript · Apache-2.0 · 56k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Lets you write HTML and render it as video, built for agents. Gained about 12k stars this month.</td></tr>
+</table>
+
+<h2>Education and Research</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/THU-MAIC/OpenMAIC">THU-MAIC/OpenMAIC</a></strong></td><td style="text-align:right; color:#888;">TypeScript · MIT · 40k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Open Multi-Agent Interactive Classroom from Tsinghua, offering an immersive multi-agent learning experience in one click. Added about 11k stars this month.</td></tr>
+</table>
+
+<h2>Data, OSINT, and Utilities</h2>
+
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif; font-size:14px;">
+<tr style="border-bottom:1px solid #eee;"><td style="padding:8px 0;"><strong><a href="https://github.com/bilawalsidhu/gods-eye-view">bilawalsidhu/gods-eye-view</a></strong></td><td style="text-align:right; color:#888;">JavaScript · Unknown · 47k</td></tr>
+<tr><td colspan="2" style="padding:0 0 12px; color:#555;">Browser-based spy satellite simulator that shows live open-source spatial intelligence on a photorealistic 3D globe using real data. Gained about 31k stars this month.</td></tr>
+</table>
+
+<hr>
+<p style="color:#999; font-size:12px; text-align:center;">23 repositories · Source: GitHub Trending</p>
+]]></content:encoded>
+    </item>
+
+<item>
       <title>GitHub Trending Digest — May 2026</title>
       <link>https://github.com/trending</link>
       <guid isPermaLink="false">github-trending-2026-05</guid>
