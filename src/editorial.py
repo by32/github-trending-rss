@@ -11,6 +11,8 @@ import anthropic
 
 logger = logging.getLogger(__name__)
 
+MODEL = "claude-sonnet-5-5"
+
 CATEGORIES = [
     "AI / Machine Learning",
     "Developer Tools / Skills Ecosystem",
@@ -85,6 +87,17 @@ def _extract_json(text: str) -> str:
     return text.strip()
 
 
+def _response_text(message) -> str:
+    """Return the reply text; the response can open with (empty) thinking blocks."""
+    if message.stop_reason == "refusal":
+        raise RuntimeError(f"Claude declined the request: {message.stop_details}")
+    if message.stop_reason == "max_tokens":
+        raise RuntimeError("Claude hit max_tokens before finishing the JSON")
+    if message.model != MODEL:
+        logger.warning("Served by fallback model %s", message.model)
+    return "".join(block.text for block in message.content if block.type == "text")
+
+
 def call_claude(prompt: str, api_key: str) -> dict:
     """Call Anthropic Messages API with Claude Sonnet and return parsed JSON.
 
@@ -95,14 +108,20 @@ def call_claude(prompt: str, api_key: str) -> dict:
 
     for attempt in range(3):
         try:
-            message = client.messages.create(
-                model="claude-sonnet-4-20250514",
+            # Sonnet 5.5 rejects non-default temperature; effort "low" suits
+            # categorize-and-summarize. Server-side fallback retries a safety
+            # decline (e.g. on a security-tool repo) on another model; the
+            # pinned SDK has no `fallbacks` argument yet, hence extra_body.
+            message = client.beta.messages.create(
+                model=MODEL,
                 max_tokens=16384,
-                temperature=0.3,
+                output_config={"effort": "low"},
                 system=SYSTEM_PROMPT,
                 messages=[{"role": "user", "content": prompt}],
+                betas=["server-side-fallback-2026-07-01"],
+                extra_body={"fallbacks": "default"},
             )
-            text = _extract_json(message.content[0].text)
+            text = _extract_json(_response_text(message))
             return json.loads(text)
         except json.JSONDecodeError:
             if attempt < 2:

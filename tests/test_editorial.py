@@ -8,7 +8,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from src.editorial import CATEGORIES, _extract_json, build_prompt, call_claude, parse_editorial_response
+from src.editorial import CATEGORIES, MODEL, _extract_json, build_prompt, call_claude, parse_editorial_response
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
@@ -61,14 +61,20 @@ class TestExtractJson:
         assert "categories" in result
 
 
+def _message(text: str, stop_reason: str = "end_turn", model: str = MODEL) -> MagicMock:
+    """A response that opens with an empty thinking block, like Sonnet 5.5's."""
+    message = MagicMock()
+    message.stop_reason = stop_reason
+    message.model = model
+    message.content = [MagicMock(type="thinking", thinking=""), MagicMock(type="text", text=text)]
+    return message
+
+
 class TestCallClaude:
     def test_success(self):
         sample = json.loads((FIXTURES / "sample_claude_response.json").read_text())
-        mock_message = MagicMock()
-        mock_message.content = [MagicMock(text=json.dumps(sample))]
-
         mock_client = MagicMock()
-        mock_client.messages.create.return_value = mock_message
+        mock_client.beta.messages.create.return_value = _message(json.dumps(sample))
 
         with patch("src.editorial.anthropic.Anthropic", return_value=mock_client):
             result = call_claude("test prompt", api_key="fake-key")
@@ -76,14 +82,26 @@ class TestCallClaude:
         assert "categories" in result
         assert "description" in result
 
+    def test_request_shape(self):
+        sample = json.loads((FIXTURES / "sample_claude_response.json").read_text())
+        mock_client = MagicMock()
+        mock_client.beta.messages.create.return_value = _message(json.dumps(sample))
+
+        with patch("src.editorial.anthropic.Anthropic", return_value=mock_client):
+            call_claude("test prompt", api_key="fake-key")
+
+        kwargs = mock_client.beta.messages.create.call_args.kwargs
+        assert kwargs["model"] == "claude-sonnet-5-5"
+        assert "temperature" not in kwargs
+        assert kwargs["output_config"] == {"effort": "low"}
+        assert kwargs["extra_body"] == {"fallbacks": "default"}
+        assert kwargs["betas"] == ["server-side-fallback-2026-07-01"]
+
     def test_strips_markdown_fences(self):
         sample = json.loads((FIXTURES / "sample_claude_response.json").read_text())
         fenced = f"```json\n{json.dumps(sample)}\n```"
-        mock_message = MagicMock()
-        mock_message.content = [MagicMock(text=fenced)]
-
         mock_client = MagicMock()
-        mock_client.messages.create.return_value = mock_message
+        mock_client.beta.messages.create.return_value = _message(fenced)
 
         with patch("src.editorial.anthropic.Anthropic", return_value=mock_client):
             result = call_claude("test prompt", api_key="fake-key")
@@ -92,21 +110,33 @@ class TestCallClaude:
 
     def test_invalid_json_retries(self):
         sample = json.loads((FIXTURES / "sample_claude_response.json").read_text())
-
-        bad_message = MagicMock()
-        bad_message.content = [MagicMock(text="not json")]
-
-        good_message = MagicMock()
-        good_message.content = [MagicMock(text=json.dumps(sample))]
-
         mock_client = MagicMock()
-        mock_client.messages.create.side_effect = [bad_message, good_message]
+        mock_client.beta.messages.create.side_effect = [_message("not json"), _message(json.dumps(sample))]
 
         with patch("src.editorial.anthropic.Anthropic", return_value=mock_client):
             result = call_claude("test prompt", api_key="fake-key")
 
         assert "categories" in result
-        assert mock_client.messages.create.call_count == 2
+        assert mock_client.beta.messages.create.call_count == 2
+
+    def test_fallback_model_accepted(self):
+        sample = json.loads((FIXTURES / "sample_claude_response.json").read_text())
+        mock_client = MagicMock()
+        mock_client.beta.messages.create.return_value = _message(json.dumps(sample), model="claude-sonnet-5")
+
+        with patch("src.editorial.anthropic.Anthropic", return_value=mock_client):
+            result = call_claude("test prompt", api_key="fake-key")
+
+        assert "categories" in result
+
+    @pytest.mark.parametrize("stop_reason", ["refusal", "max_tokens"])
+    def test_refusal_and_truncation_raise(self, stop_reason):
+        mock_client = MagicMock()
+        mock_client.beta.messages.create.return_value = _message('{"partial":', stop_reason=stop_reason)
+
+        with patch("src.editorial.anthropic.Anthropic", return_value=mock_client):
+            with pytest.raises(RuntimeError):
+                call_claude("test prompt", api_key="fake-key")
 
 
 class TestParseEditorialResponse:
